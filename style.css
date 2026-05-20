@@ -427,3 +427,11 @@ hr {
     border-radius: 4px;
   }
 }
+.sad2 img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 20px;
+}
