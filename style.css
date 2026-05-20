@@ -295,3 +295,135 @@ hr {
     border: 2px solid black;
     border-radius: 20px;
 }
+
+
+
+/* ===== ПОЛНАЯ ПЕРЕСТРОЙКА ДЛЯ ТЕЛЕФОНОВ И ПЛАНШЕТОВ ===== */
+@media (max-width: 800px) {
+
+  /* 1. ВСЕ БЛОКИ ТЕКСТА — ПРИЖИМАЕМ К КРАЯМ */
+  #parg,
+  .content,
+  .donate,
+  .why,
+  .why2,
+  .how,
+  .how2 {
+    margin: 20px 15px !important;
+    width: auto !important;
+    max-width: none !important;
+    float: none !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+    padding: 15px 20px !important;
+  }
+
+  /* 2. ЗАГОЛОВОК И ЛОГОТИП */
+  .header {
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  
+  .wedlogo {
+    float: none !important;
+    display: inline-block !important;
+    margin: 0 0 10px 0 !important;
+    font-size: 32px !important;
+  }
+  
+  .header h1 {
+    font-size: 22px !important;
+    margin: 0 !important;
+    word-wrap: break-word !important;
+  }
+
+  /* 3. МЕНЮ — ПРОКРУЧИВАЕМОЕ ВБОК */
+  .menu {
+    height: auto !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+  }
+  
+  .menu a {
+    float: none !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+
+  /* 4. ВСЕ КАРТИНКИ — НА ВСЮ ШИРИНУ, ПО ЦЕНТРУ */
+  .kart img,
+  .kartt img,
+  .karttt img,
+  .qr-code img,
+  .sad img {
+    width: 90% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    float: none !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* 5. БЛОКИ HOW И QR-КОД */
+  .how, .how2 {
+    text-align: center !important;
+    font-size: 22px !important;
+  }
+  
+  .qr-code {
+    text-align: center !important;
+  }
+
+  /* 6. КНОПКА ПЛАТЕЖА */
+  .payment {
+    margin: 30px auto !important;
+    text-align: center !important;
+  }
+  
+  .payment a {
+    display: inline-block !important;
+    padding: 12px 30px !important;
+    font-size: 18px !important;
+  }
+
+  /* 7. ФУТЕР */
+  .footer {
+    margin-top: 40px !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+  }
+
+  /* 8. ДОПОЛНИТЕЛЬНО ДЛЯ ДРУГИХ СТРАНИЦ */
+  .column.side,
+  .column.middle {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* 9. СПИСКИ В ПОМОЩЬ (why2) */
+  .why2 ul {
+    padding-left: 20px !important;
+  }
+  
+  .why2 li {
+    font-size: 18px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  /* 10. ПОЛОСА ПРОКРУТКИ ДЛЯ МЕНЮ (необязательно, но красиво) */
+  .menu::-webkit-scrollbar {
+    height: 4px;
+  }
+  .menu::-webkit-scrollbar-track {
+    background: #333;
+  }
+  .menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+}
